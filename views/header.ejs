@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% if(typeof species !== 'undefined') { %>
+        <title><%= species %></title>
+    <% } else { %>
+        <title>Animals app</title>
+    <% } %>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/api">My API</a>
+        <a href="/animals">My animals</a>
+        <a href="/animals/new">Add a new species</a>
+    </nav>

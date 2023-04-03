@@ -9,12 +9,12 @@ router.get('/', (req, res) => {
 
 // CREATE Route: new animals
 router.get('/new', (req, res) => {
-    res.render('fruits/new.ejs');
+    res.render('animals/new.ejs');
 });
 
 // SHOW Route: returns one item 
 router.get('/:id', (req, res) => {
-    const animals = animals[req.params.id];
+    const animal = animals[req.params.id];
     res.render('animals/show.ejs', { animal: animal });
 });
 
