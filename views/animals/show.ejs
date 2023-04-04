@@ -1,0 +1,8 @@
+<%- include('../header.ejs', {name: animal.location + " " + animal.species}) %>
+    <h1>What do we have here?</h1>
+    <img src=<%= animal.image %> alt="Animal image">
+    <h2>Species: <%= animal.species %></h2>
+    <h2>Location: <%= animal.location %></h2>
+    <h2>Extinct: <%= animal.extinct %></h2>
+</body>
+</html>

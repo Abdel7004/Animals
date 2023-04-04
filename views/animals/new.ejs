@@ -1,0 +1,21 @@
+<%- include('../header.ejs', {name: "Add a New Species"}) %>
+<!-- METHOD is what to do on the server 
+    ACTION is the route on the server-->
+
+    <form method="POST" action="/animals">
+        <label for="species">Species:</label>
+        <input type="text" name="species" id="species">
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" name="location" id="location">
+        <br>
+        <label for="extinct">Extinct </label>
+        <input type="checkbox" name="extinct" id="extinct">
+        <br>
+        <label for="image">Image URL: </label>
+        <input type="text" name="image" id="image">
+
+        <input type="submit" value="Add Species" />
+    </form>
+</body>
+</html>
